@@ -2,244 +2,244 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/vi/1-introduce/</loc>
+    <loc>//localhost:1313/vi/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-introduce/"
+                href="//localhost:1313/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-introduce/"
+                href="//localhost:1313/vi/1-introduce/"
                 />
   </url><url>
-    <loc>/vi/4-deploybackend/4.1-createec2/</loc>
+    <loc>//localhost:1313/vi/4-deploybackend/4.1-createec2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-deploybackend/4.1-createec2/"
+                href="//localhost:1313/4-deploybackend/4.1-createec2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-deploybackend/4.1-createec2/"
+                href="//localhost:1313/vi/4-deploybackend/4.1-createec2/"
                 />
   </url><url>
-    <loc>/vi/3-deploydatabase/3.1-createsubnetgroup/</loc>
+    <loc>//localhost:1313/vi/3-deploydatabase/3.1-createsubnetgroup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-deploydatabase/3.1-createsubnetgroup/"
+                href="//localhost:1313/3-deploydatabase/3.1-createsubnetgroup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-deploydatabase/3.1-createsubnetgroup/"
+                href="//localhost:1313/vi/3-deploydatabase/3.1-createsubnetgroup/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/2.1-createvpc/</loc>
+    <loc>//localhost:1313/vi/2-prerequiste/2.1-createvpc/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.1-createvpc/"
+                href="//localhost:1313/2-prerequiste/2.1-createvpc/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.1-createvpc/"
+                href="//localhost:1313/vi/2-prerequiste/2.1-createvpc/"
                 />
   </url><url>
-    <loc>/vi/</loc>
+    <loc>//localhost:1313/vi/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="//localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="//localhost:1313/vi/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/</loc>
+    <loc>//localhost:1313/vi/2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/"
+                href="//localhost:1313/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/"
+                href="//localhost:1313/vi/2-prerequiste/"
                 />
   </url><url>
-    <loc>/vi/3-deploydatabase/3.2-createdb/</loc>
+    <loc>//localhost:1313/vi/3-deploydatabase/3.2-createdb/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-deploydatabase/3.2-createdb/"
+                href="//localhost:1313/3-deploydatabase/3.2-createdb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-deploydatabase/3.2-createdb/"
+                href="//localhost:1313/vi/3-deploydatabase/3.2-createdb/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/2.2-createsubnet/</loc>
+    <loc>//localhost:1313/vi/2-prerequiste/2.2-createsubnet/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.2-createsubnet/"
+                href="//localhost:1313/2-prerequiste/2.2-createsubnet/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.2-createsubnet/"
+                href="//localhost:1313/vi/2-prerequiste/2.2-createsubnet/"
                 />
   </url><url>
-    <loc>/vi/4-deploybackend/4.2-deploybackend/</loc>
+    <loc>//localhost:1313/vi/4-deploybackend/4.2-deploybackend/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-deploybackend/4.2-deploybackend/"
+                href="//localhost:1313/4-deploybackend/4.2-deploybackend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-deploybackend/4.2-deploybackend/"
+                href="//localhost:1313/vi/4-deploybackend/4.2-deploybackend/"
                 />
   </url><url>
-    <loc>/vi/4-deploybackend/4.3-createalb/</loc>
+    <loc>//localhost:1313/vi/4-deploybackend/4.3-createalb/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-deploybackend/4.3-createalb/"
+                href="//localhost:1313/4-deploybackend/4.3-createalb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-deploybackend/4.3-createalb/"
+                href="//localhost:1313/vi/4-deploybackend/4.3-createalb/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/2.3-createigw/</loc>
+    <loc>//localhost:1313/vi/2-prerequiste/2.3-createigw/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.3-createigw/"
+                href="//localhost:1313/2-prerequiste/2.3-createigw/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.3-createigw/"
+                href="//localhost:1313/vi/2-prerequiste/2.3-createigw/"
                 />
   </url><url>
-    <loc>/vi/3-deploydatabase/</loc>
+    <loc>//localhost:1313/vi/3-deploydatabase/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-deploydatabase/"
+                href="//localhost:1313/3-deploydatabase/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-deploydatabase/"
+                href="//localhost:1313/vi/3-deploydatabase/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/2.4-createnatgw/</loc>
+    <loc>//localhost:1313/vi/2-prerequiste/2.4-createnatgw/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.4-createnatgw/"
+                href="//localhost:1313/2-prerequiste/2.4-createnatgw/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.4-createnatgw/"
+                href="//localhost:1313/vi/2-prerequiste/2.4-createnatgw/"
                 />
   </url><url>
-    <loc>/vi/4-deploybackend/</loc>
+    <loc>//localhost:1313/vi/4-deploybackend/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-deploybackend/"
+                href="//localhost:1313/4-deploybackend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-deploybackend/"
+                href="//localhost:1313/vi/4-deploybackend/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/2.5-createroutetable/</loc>
+    <loc>//localhost:1313/vi/2-prerequiste/2.5-createroutetable/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.5-createroutetable/"
+                href="//localhost:1313/2-prerequiste/2.5-createroutetable/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.5-createroutetable/"
+                href="//localhost:1313/vi/2-prerequiste/2.5-createroutetable/"
                 />
   </url><url>
-    <loc>/vi/5-deployfrontend/</loc>
+    <loc>//localhost:1313/vi/5-deployfrontend/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-deployfrontend/"
+                href="//localhost:1313/5-deployfrontend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-deployfrontend/"
+                href="//localhost:1313/vi/5-deployfrontend/"
                 />
   </url><url>
-    <loc>/vi/6-cleanup/</loc>
+    <loc>//localhost:1313/vi/6-cleanup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6-cleanup/"
+                href="//localhost:1313/6-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6-cleanup/"
+                href="//localhost:1313/vi/6-cleanup/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/2.6-createsecuritygroup/</loc>
+    <loc>//localhost:1313/vi/2-prerequiste/2.6-createsecuritygroup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.6-createsecuritygroup/"
+                href="//localhost:1313/2-prerequiste/2.6-createsecuritygroup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.6-createsecuritygroup/"
+                href="//localhost:1313/vi/2-prerequiste/2.6-createsecuritygroup/"
                 />
   </url><url>
-    <loc>/vi/categories/</loc>
+    <loc>//localhost:1313/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="//localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="//localhost:1313/vi/categories/"
                 />
   </url><url>
-    <loc>/vi/tags/</loc>
+    <loc>//localhost:1313/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="//localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="//localhost:1313/vi/tags/"
                 />
   </url>
 </urlset>

@@ -1,139 +1,139 @@
 [
 {
-	"uri": "/vi/1-introduce/",
+	"uri": "//localhost:1313/vi/1-introduce/",
 	"title": "Giới thiệu",
 	"tags": [],
 	"description": "",
 	"content": "Kiến trúc tổng quan Trong kiến trúc này, sử dụng server EC2 frontend là public, server EC2 backend và Database là private. Người dùng truy cập vào web thông qua request vào server frontend. Frontend được viết bằng React.js và được chạy trên Nginx webserver. Các lệnh gọi API sẽ được chuyển hướng đến cân bằng tải private. Cân bằng tải sẽ chuyển tiếp lưu lượng tới server backend. Server backend được viết bằng Python Django. Backend sẽ thao tác với dữ liệu và lấy dữ liệu từ RDS Postgres trả về phía frontend.\n"
 },
 {
-	"uri": "/vi/4-deploybackend/4.1-createec2/",
+	"uri": "//localhost:1313/vi/4-deploybackend/4.1-createec2/",
 	"title": "Tạo máy chủ EC2",
 	"tags": [],
 	"description": "",
 	"content": "Trong bài workshop này để truy cập vào server backend private, sử dụng server public frontend truy cập vào server backend.\nTạo máy chủ EC2 frontend public Tìm dịch vụ EC2 Tạo máy chủ EC2\nChọn Instance Nhấn vào Launch instance Thực hiện cài đặt EC2\nTrong phần Name điền ec2-public. Keypair name chọn keypair đã lưu trong máy. Nếu chưa có nhấn Create new subnet và lưu keypair về máy. VPC chọn VPC-web Subnet chọn public-subnet Auto-assign public Ip chọn enable. Cấu hình Security group\nChọn SG-public-subnet Nhấn Launch Instance Tạo máy chủ EC2 backend private Cấu hình server backend 1 như trong hình\nTương tự cấu hình server backend 2 như trong hình\nTạo 3 server EC2 thành công Đổi tên server ec2-public thành ec2-frontend Kiểm tra kết nối giữa các server Truy cập vào server frontend Thực hiện SSH vào server frontend bằng keypair Kiểm tra kết nối internet bằng lệnh ping gooogle.com Kiểm tra kết nối đến server-backend bằng lệnh ping 10.10.2.75 9. Copy keypair từ máy window sang máy chủ frontend để truy cập vào máy chủ backend private 10. Truy cập vào ec2-backend và kiểm tra internet 11. Truy cập vào máy chủ ec2-backend 2 và kiểm tra internet "
 },
 {
-	"uri": "/vi/3-deploydatabase/3.1-createsubnetgroup/",
+	"uri": "//localhost:1313/vi/3-deploydatabase/3.1-createsubnetgroup/",
 	"title": "Tạo Subnet Group",
 	"tags": [],
 	"description": "",
 	"content": "Tạo subnet groups Trong giao diện dashboard Amazon RDS\nChọn Subnet groups Chọn Create DB subnet group Đặt tên, miêu tả , chọn VPC cho subnets group. Thêm subnet cho Database. Sử dụng 2 subnet private đã tạo Hoàn thành tạo subnet groups "
 },
 {
-	"uri": "/vi/2-prerequiste/2.1-createvpc/",
+	"uri": "//localhost:1313/vi/2-prerequiste/2.1-createvpc/",
 	"title": "Tạo VPC",
 	"tags": [],
 	"description": "",
 	"content": "Tạo VPC Truy cập giao diện AWS Management Console\nTìm VPC Chọn VPC Trong giao diện VPC\nChọn Yours VPC Chọn Create VPC Tiến hành các bước tạo VPC\nResource, chọn VPC only Name tag, nhập VPC-web IPv4 CIDR, nhập 10.10.0.0/16 Chọn Create VPC Hoàn thành tạo VPC "
 },
 {
-	"uri": "/vi/",
+	"uri": "//localhost:1313/vi/",
 	"title": "Triển khai kiến trúc web three tier trong AWS",
 	"tags": [],
 	"description": "",
-	"content": "Triển khai kiến trúc web three tier trong AWS Tổng quan Trong bài lab này, bạn sẽ tìm hiểu về kiến trúc web three tier trong AWS. Tìm hiểu về cách thiết kế và hướng dẫn triển khai web three tier bao gồm frontend, backend và database trong AWS.\nNội dung Giới thiệu Các bước chuẩn bị Triển khai Database Triển khai Backend Triển khai Frontend Dọn dẹp tài nguyên "
+	"content": "Triển khai kiến trúc web three tier trong AWS Tổng quan Trong bài lab này, sẽ tìm hiểu về kiến trúc web three tier trong AWS. Tìm hiểu về cách thiết kế và hướng dẫn triển khai web three tier bao gồm frontend, backend và database trong AWS.\nNội dung Giới thiệu Các bước chuẩn bị Triển khai Database Triển khai Backend Triển khai Frontend Dọn dẹp tài nguyên "
 },
 {
-	"uri": "/vi/2-prerequiste/",
+	"uri": "//localhost:1313/vi/2-prerequiste/",
 	"title": "Các bước chuẩn bị ",
 	"tags": [],
 	"description": "",
 	"content": "Các bước chuẩn bị Trong phần này, chúng ta sẽ xây dựng các thành phần mạng trong VPC và các security group cho các server EC2 và database RDS .\nNội dung Tạo VPC Tạo Subnet Tạo Internet Gateway Tạo NAT Gateway Tạo Route Table Tạo Security Group "
 },
 {
-	"uri": "/vi/3-deploydatabase/3.2-createdb/",
+	"uri": "//localhost:1313/vi/3-deploydatabase/3.2-createdb/",
 	"title": "Tạo Database",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Database PostgreSQL Trong giao diện dashboard Amazon RDS\nChọn Databases Chọn Create database Chọn Standard create. Phần Engine options chọn PostgreSQL Chọn Templates Free Tier Cài đặt Master Username và Master Password để truy cập vào Database\nNhập Master Username là : myusername Nhập Master Password là: mypassword Cài đặt Secuiry Group cho Database sử dụng Security Group của subnet private. Nhấn create Đợi 5 phút thì Database sẽ lên "
 },
 {
-	"uri": "/vi/2-prerequiste/2.2-createsubnet/",
+	"uri": "//localhost:1313/vi/2-prerequiste/2.2-createsubnet/",
 	"title": "Tạo Subnet",
 	"tags": [],
 	"description": "",
 	"content": "Tạo subnet Trong giao diện VPC\nChọn Subnets Chọn Create subnet Trong giao diện Create subnet\nChọn VPC-web VPC Thực hiện subnet settings\nSubnet name, nhập public subnet Chọn AZ us-east-1a IPv4 CIDR block, nhập 10.10.1.0/24 theo kiến trúc mô tả Chọn Create subnet Hoàn thành tạo subnet Thực hiện các bước tương tự tạo thêm các subnet\nprivate subnet với CIDR là 10.10.2.0/24 nằm trong Availability Zone us-east-1a. private subnet 2 với CIDR là 10.10.3.0/24 nằm trong Availability Zone us-east-1b. Vậy chúng ta đã tạo thành công 3 Subnet với 1 subnet public và 2 subnet private.\nCho phép tự động cấp phát public ip address cho public subnet. Một điểm đáng chú ý nữa là các subnet về cơ bản đều giống nhau, thông qua cấu hình route table và cấp phát public IP address mà chúng ta mới phân chia ra Public và Private Subnet.\nTrong giao diện VPC\nChọn Subnets Chọn public subnet Chọn Actions Chọn Edit subnet settings Trong mục Auto-assign IP settings\nChọn Enable auto-assign publi IPv4 address Chọn Save "
 },
 {
-	"uri": "/vi/4-deploybackend/4.2-deploybackend/",
+	"uri": "//localhost:1313/vi/4-deploybackend/4.2-deploybackend/",
 	"title": "Triển khai Backend ",
 	"tags": [],
 	"description": "",
 	"content": "Trong phần này, chúng ta sẽ triển khai 2 Backend được viết bằng python Django ở trong 2 máy chủ EC2 sử dụng docker.\nCài đặt git và Docker Sử dụng các câu lệnh sau để tải git, docker và tải project về cả 2 server backend sudo yum update -y sudo yum install git -y # tải git git clone https://github.com/chungngocnguyen/Django-react.git sudo yum install docker #tải docker sudo usermod -a -G docker ec2-user id ec2-user newgrp docker Kiểm tra docker trên ec2-backend Kiểm tra docker và project trên ec2-backend 2 Cài đặt kết nối backend đến database. Chỉnh sửa file ./Django-react/backend/backend/setting.py\nVới các cấu hình đã được tạo database RDS postgres Thực hiện build images docker bằng câu lệnh\ndocker build -t backend:v1 . Kiểm tra images được và chạy container bằng câu lệnh docker run -d -p 8000:8000 backend:v1 Kiểm tra API bằng cách curl đến địa chỉ server cổng 8000\nTrên server backend 2\nTrên server backend 1 "
 },
 {
-	"uri": "/vi/4-deploybackend/4.3-createalb/",
+	"uri": "//localhost:1313/vi/4-deploybackend/4.3-createalb/",
 	"title": "Triển khai Load Balancer cho Backend ",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Subnet Group Trên Dashboard EC2 tìm Target Group chọn Create target group Thực hiện cấu hình target group vào nhóm EC2 backend port 8000 Chọn target instances Đặt Target group name là groupBackend Protocol là HTTP và Port 8000 Chọn VPC là VPC-web Đặt path cho health Check là /healthcheck Nhấn Next Chọn 2 server backend đã tạo và chọn Include as pending below Nhấn Create target group Tạo Load Balancer Trong EC2 dashboard chọn Load Balancer Nhấn Create Balancer Chọn Application Load Balancer Đặt tên name là ALB-Backend Đặt scheme là Internal Chọn VPC là VPC-web Chọn 2 subnet private đã tạo Chọn security group private đã tạo Lựa chọn Forward to groupbackend Nhấn Create Load Balancer Load Balancer đã tạo thành công "
 },
 {
-	"uri": "/vi/2-prerequiste/2.3-createigw/",
+	"uri": "//localhost:1313/vi/2-prerequiste/2.3-createigw/",
 	"title": "Tạo Internet Gateway",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Internet Gateway Trong giao diện VPC\nChọn Internet Gateways Chọn Create internet gateway Thực hiện cấu hình\nName tag, nhập IGW Chọn Create internet gateway Hoàn thành tạo Internet Gateway Thực hiện Attach VPC\nChọn Actions Chọn Attach to VPC Chọn VPC-web, VPC ID sẽ được tự động điền. Chọn Attach intermet gateway Khi attach thành công State internet gateway sẽ chuyển sang Attached "
 },
 {
-	"uri": "/vi/3-deploydatabase/",
+	"uri": "//localhost:1313/vi/3-deploydatabase/",
 	"title": "Triển khai Database ",
 	"tags": [],
 	"description": "",
 	"content": "Các bước chuẩn bị Trong phần này, chúng ta sẽ triển khai database PostgreSQL sử dụng dịch vụ Amazon RDS.\nNội dung Tạo SubnetGroup Tạo Database "
 },
 {
-	"uri": "/vi/2-prerequiste/2.4-createnatgw/",
+	"uri": "//localhost:1313/vi/2-prerequiste/2.4-createnatgw/",
 	"title": "Tạo Nat Gateway",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Elastic IP address. Trong giao diện VPC\nChọn Elastic IPs Chọn Allocate Elastic IP address Chọn Allocate Tạo thành công Elastic IP Tạo NAT Gateway. Trong giao diện VPC\nChọn NAT gateways Chọn Create NAT gateway Cấu hình NAT gateways\nNhập Name là NATGW Subnet chọn public subnet Elastic Ip chọn địa chỉ Elastic Ip tạo ở trên Nhấn Create NAT gateway Đợi 5 phút thì state pending chuyển sang avaiable\n"
 },
 {
-	"uri": "/vi/4-deploybackend/",
+	"uri": "//localhost:1313/vi/4-deploybackend/",
 	"title": "Triển khai Backend ",
 	"tags": [],
 	"description": "",
 	"content": "Tổng Quan Trong phần này, chúng ta sẽ triển khai 2 Backend được viết bằng python Django ở trong 2 máy chủ EC2 có địa chỉ private.\nNội dung Tạo máy chủ EC2 Triển khai backend Triển khai Load Balancer cho backend "
 },
 {
-	"uri": "/vi/2-prerequiste/2.5-createroutetable/",
+	"uri": "//localhost:1313/vi/2-prerequiste/2.5-createroutetable/",
 	"title": "Tạo Route Table",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Route Table định tuyến đi ra ngoài internet thông qua Internet Gateway. Trong giao diện VPC\nChọn Route Tables Chọn Create route table Tiến hành cấu hình Route table\nName, nhập rtb-public-Subnet VPC, chọn VPC-web VPC. VPC id sẽ được tự động điền vào. Chọn Cretae route table Hoàn thành tạo Route table Thực hiện Edit route\nCuộn xuống dưới chọn Edit routes Trong giao diện Edit routes\nChọn Add route Điền phần Destination CIDR : 0.0.0.0/0 đại diện cho Internet. Trong phần Target chọn Internet Gateway, sau đó chọn Internet Gateway chúng ta đã tạo. Internet Gateway ID sẽ được tự động điền. Chọn Save changes Đảm bảo rtb-public-Subnet đang được chọn.\nChọn subnet associations Chọn Edit subnet associations Trong bước Edit subnet associations\nChọn đúng public subnet chúng ta đã tạo. Chọn Save associations Tạo Route Table định tuyến đi ra ngoài internet thông qua NAT Gateway. Tương tự trên tạo một route table mới.\nTiến hành cấu hình route table mới\nName, nhập rtb-private-subnet VPC, chọn VPC-web VPC. VPC id sẽ được tự động điền vào. Chọn Cretae route table Trong giao diện Edit routes\nChọn Add route Điền phần Destination CIDR : 0.0.0.0/0 đại diện cho Internet. Trong phần Target chọn NAT Gateway, sau đó chọn NAT Gateway chúng ta đã tạo. NAT Gateway ID sẽ được tự động điền. Chọn Save changes Thực hiện Edit subnet associations Chọn đúng 2 private subnet chúng ta đã tạo. Chọn Save associations "
 },
 {
-	"uri": "/vi/5-deployfrontend/",
+	"uri": "//localhost:1313/vi/5-deployfrontend/",
 	"title": "Triển khai Frontend ",
 	"tags": [],
 	"description": "",
 	"content": "Cài đặt git tải project và cài đặt Docker Tương tự cài đặt giống trong phần triển khai backend\nsudo yum update -y sudo yum install git -y # tải git git clone https://github.com/chungngocnguyen/Django-react.git sudo yum install docker #tải docker sudo usermod -a -G docker ec2-user id ec2-user newgrp docker Triển khai frontend Thực hiện cấu hình file nginx để toàn bộ api chuyển đến load balancer. Trong frontend/nginx.conf\nserver {\rlisten 80;\rserver_name localhost;\rroot /usr/share/nginx/html;\rindex index.html\rinclude /etc/nginx/mime.types;\rgzip on;\rgzip_min_length 1000;\rgzip_proxied expired no-cache no-store private auth;\rgzip_types text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript;\rlocation / {\rtry_files $uri $uri/ /index.html;\r}\rlocation /api/ {\rproxy_pass http://internal-ALB-backend-342211697.us-east-1.elb.amazonaws.com:80;\r}\rlocation /home/ {\rproxy_pass http://internal-ALB-backend-342211697.us-east-1.elb.amazonaws.com:80;\r}\rlocation /logout/ {\rproxy_pass http://internal-ALB-backend-342211697.us-east-1.elb.amazonaws.com:80;\r}\rlocation /token/ {\rproxy_pass http://internal-ALB-backend-342211697.us-east-1.elb.amazonaws.com:80;\r}\rlocation token/refresh/ {\rproxy_pass http://internal-ALB-backend-342211697.us-east-1.elb.amazonaws.com:80;\r}\rlocation /create/ {\rproxy_pass http://internal-ALB-backend-342211697.us-east-1.elb.amazonaws.com:80;\r}\r} Thực hiện build images và chạy container Kiểm tra container Kiểm tra trang web được triển khai thành công Refresh kiểm tra load balancer thành công. Hiện tại được thực hiện bởi backend server 2 . "
 },
 {
-	"uri": "/vi/6-cleanup/",
+	"uri": "//localhost:1313/vi/6-cleanup/",
 	"title": "Dọn dẹp tài nguyên",
 	"tags": [],
 	"description": "",
 	"content": "Dọn dẹp tài nguyên Chúng ta sẽ tiến hành xóa các tài nguyên theo thứ tự sau\nTerminate các EC2 Instance. Terminate EC2 instance. Truy cập Amazon EC2 console tại địa chỉ EC2. Trên thanh điều hướng bên trái, chọn Intances Chọn tất cả EC2 Instance liên quan tới bài lab. Chọn Instance state Chọn Terminate instance Xóa NAT Gateway, Elastic IP Address Xóa NAT Gateway và Elastic IP Address. AWS sẽ thu tiền cho các EIP lãng phí nên bạn cần kiểm tra kỹ để tránh bị trừ chi phí ngoài ý muốn. Truy cập trang Amazon VPC console tại địa chỉ VPC Trên thanh điều hướng bên trái , click NAT Gateway. Chọn NAT Gateway. Click Action. Click Delete NAT Gateway. Gõ delete. Click Delete để xác nhận xóa NAT Gateway Xóa Elastic IP Address. Tiếp tục xóa Elastic IP Address. Truy cập trang Amazon VPC console tại địa chỉ https://console.aws.amazon.com/vpc/ Trên thanh điều hướng bên trái , click Elastic IP. Chọn Elastic IP Address chúng ta đã tạo. Click Action. Click Release Elastic IP Address Click Release. Xóa Internet gateway Xóa Load balancer Xóa Target group Xóa Target group "
 },
 {
-	"uri": "/vi/2-prerequiste/2.6-createsecuritygroup/",
+	"uri": "//localhost:1313/vi/2-prerequiste/2.6-createsecuritygroup/",
 	"title": "Tạo Security Group",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Security Group Tạo Security Group cho máy chủ nằm trong Public subnet Trong giao diện VPC\nChọn Security Group Chọn Cretae security group Thực hiện cấu hình Security group\nSecurity Group name, nhập SG-public-subnet Description, nhập allow SSH and internet. Chọn VPC-web VPC Thực hiện cấu hình Inbound rules\nTrong Inbound rules, click Add rule.\nChọn Add rule để thêm 1 rule mới.\nChọn Type: All ICMP - IPv4 và Source: Anywhere. Cho phép ping từ bất kì địa chỉ IP nào.\nChọn Type: SSH và Source: Anywhere. Cho phép SSH từ bất kì địa chỉ IP nào.\nChọn Type: All traffic và Source: Anywhere. Cho phép truy cập từ bất kì địa chỉ IP nào. Kiểm tra Outbound rules và chọn Cretae security group\nHoàn thành tạo security group cho máy chủ nằm trong Public subnet Tạo Security Group cho máy chủ nằm trong Private subnet Trong giao diện VPC\nChọn Security Groups Chọn Create security group Thực hiện cấu hình Security group\nTrong phần Security group name điền SG-private-subnet\nTrong phần Description điền Allow SSH and internet\nchọn VPC, lựa chọn VPC có tên VPC-web.\nThực hiện cấu hình Inbound rules\nTrong Inbound rules, click Add rule.\nChọn Add rule để thêm 1 rule mới.\nChọn Type: All ICMP - IPv4 và Source: Anywhere. Cho phép ping từ bất kì địa chỉ IP nào.\nChọn Type: SSH và Source: Anywhere. Cho phép SSH từ bất kì địa chỉ IP nào.\nChọn Type: All traffic và Source: Anywhere. Cho phép truy cập từ bất kì địa chỉ IP nào.\nChọn Create security group Như vậy chúng ta đã tạo được 2 Security Group cho các máy chủ nằm trong public subnet và private subnet. Do để thuận tiện trong quá trình Lab nên mình để All tracffic trong Inbound rules. Khi đã triển khai thành công web thì nên sửa lại . Với public-subnet sửa all tracfic thành HTTP chỉ cho phép các kết nối HTTP đến server.\n"
 },
 {
-	"uri": "/vi/categories/",
+	"uri": "//localhost:1313/vi/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/vi/tags/",
+	"uri": "//localhost:1313/vi/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
